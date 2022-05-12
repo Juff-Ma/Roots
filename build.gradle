@@ -71,7 +71,7 @@ dependencies {
     deobfCompile "com.azanor:Baubles:${version_baubles}"
     // compile against the JEI API but do not include it at runtime
     deobfCompile "mezz.jei:jei_${minecraft_version}:${jei_version}"
-    deobfCompile("jeresources:JustEnoughResources-${minecraft_version}:${jer_version}") {
+	deobfCompile("curse.maven:JustEnoughResources-240630:2728585") {
         exclude group: 'mezz.jei'
     }
     compile("CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-${ct_version}") {
@@ -99,7 +99,7 @@ repositories {
     maven {
         // location of a maven mirror for JEI files, as a fallback
         name = "ModMaven"
-        url = "modmaven.k-4u.nl"
+        url = "http://modmaven.k-4u.nl"
     }
     maven {
         name = "MMD Maven"
@@ -113,6 +113,9 @@ repositories {
     maven {
         name = 'Tterrag Maven'
         url "http://maven.tterrag.com"
+    }
+	maven {
+        url "https://cursemaven.com"
     }
 }
 

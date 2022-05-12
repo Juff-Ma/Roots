@@ -175,7 +175,7 @@ public class ModRecipes {
     addSummonCreatureEntry("zombie_pigman", EntityPigZombie.class, new OreIngredient("nuggetGold"), Ingredient.fromItem(Items.PORKCHOP), Ingredient.fromItem(Items.FISHING_ROD));
     addSummonCreatureEntry("zombie", EntityZombie.class, Ingredient.fromStacks(new ItemStack(Items.DYE, 1, EnumDyeColor.WHITE.getDyeDamage())), Ingredient.fromItem(Items.ROTTEN_FLESH), new OreIngredient("cropPotato"));
     addSummonCreatureEntry("skeleton", EntitySkeleton.class, Ingredient.fromStacks(new ItemStack(Items.DYE, 1, EnumDyeColor.WHITE.getDyeDamage())), Ingredient.fromItem(Items.FLINT), Ingredient.fromStacks(new ItemStack(Items.BOW, 1, OreDictionary.WILDCARD_VALUE)));
-    addSummonCreatureEntry("husk", EntityHusk.class, Ingredient.fromItem(Item.getItemFromBlock(Blocks.CACTUS)), Ingredient.fromItem(Item.getItemFromBlock(Blocks.DEADBUSH)), Ingredient.fromStacks(new ItemStack(Item.getItemFromBlock(Blocks.SANDSTONE), 1, BlockSandStone.EnumType.CHISELED.getMetadata())));
+    addSummonCreatureEntry("husk", EntityHusk.class, Ingredient.fromStacks(new ItemStack(Items.DYE, 1, EnumDyeColor.WHITE.getDyeDamage())), Ingredient.fromItem(Items.ROTTEN_FLESH), Ingredient.fromItem(Item.getItemFromBlock(Blocks.SANDSTONE)));
     addSummonCreatureEntry("spider", EntitySpider.class, Ingredient.fromItem(ModItems.glass_eye), new OreIngredient("string"), Ingredient.fromItem(Item.getItemFromBlock(Blocks.LADDER)));
     addSummonCreatureEntry("creeper", EntityCreeper.class, Ingredient.fromItem(Item.getItemFromBlock(Blocks.DIRT)), new OreIngredient("tallgrass"), Ingredient.fromItem(Items.GUNPOWDER));
     addSummonCreatureEntry("witch", EntityWitch.class, new OreIngredient("stickWood"), new OreIngredient("dustRedstone"), new OreIngredient("string"));
